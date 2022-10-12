@@ -8,6 +8,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    padding: 10px;
 }
 
 .heading{
@@ -66,6 +67,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: start;
+    max-width: 600px;
     
    
     margin: 0 auto;
@@ -74,3 +76,26 @@ body{
 .btn:hover{
     background-color: #1e2b48f0;
 }
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+
+    .score-card{
+        display: flex;
+        width: 60%;
+        flex-direction: column;
+        align-content: center;
+        padding: 15px;
+    }
+
+    .count{
+        width: 35%;
+    }
+
+    section{
+        width: 20%;
+        
+    }
+  }
